@@ -1,0 +1,91 @@
+{
+    "scriptHub": {
+         "Dark Dex": { 
+            "Name": "Dark Dex", 
+            "source": "https://vashx.org/ScriptHub/Dex.lua", 
+            "Description": "A modified version of the popular 'Dex' explorer specifically for VashX", 
+            "Picture": "https://vashx.org/ScriptHub/Dex.png"
+        },
+        "Infinite Yield":{
+            "Name": "Infinite Yield", 
+            "source": "https://vashx.org/ScriptHub/InfiniteYield.txt", 
+            "Description": "Infinite Yield Admin Script for Roblox", 
+            "Picture": "https://vashx.org/ScriptHub/InfiniteYield.png"
+        },
+        "Unamed ESP":{
+            "Name": "Unamed ESP", 
+            "source": "https://vashx.org/ScriptHub/UnamedESP.txt", 
+            "Description": "An undetected Esp Script Made By IceWolf using the Drawing Library.", 
+            "Picture": "https://vashx.org/ScriptHub/UnamedESP.png"
+        },
+        
+        "Fathom Hub":{
+            "Name": "Fathom Hub", 
+            "source": "https://vashx.org/ScriptHub/FathomHub.lua", 
+            "Description": "Fathom Hub is a  Script Hub with lots of Features made by Syntax and Expensive.", 
+            "Picture": "https://vashx.org/ScriptHub/FathomHub.png"
+        },
+
+        "TurtleSpy":{
+            "Name": "TurtleSpy", 
+            "source": "https://vashx.org/ScriptHub/TurtleSpy.lua", 
+            "Description": "Turtle Spy is RemoteSpy that allows you to generate scripts with remote, decompile Scripts or view remotes.", 
+            "Picture": "https://vashx.org/ScriptHub/TurtleSpy.png"
+        },
+
+        "Jailbreak AutoRob": {
+            "Name": "Jailbreak AutoRob", 
+            "source": "https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1", 
+            "Description": "Jailbreak AutoRob is a Op AutoFarm script for Jailbreak.", 
+            "Picture": "https://vashx.org/ScriptHub/JailBreak.png"
+        },
+        "Murder Mystery2":{
+          "Name": "Murder Mystery2",  
+          "source": "https://vashx.org/ScriptHub/MM2.txt", 
+          "Description": "The Best Murder Mystery2 Script for Farming XP, Kills and wins.", 
+          "Picture": "https://vashx.org/ScriptHub/MM2.png"
+        },
+        "Reaper Simulator":{
+          "Name": "Reaper Simulator",
+          "source": "https://vashx.org/ScriptHub/ReaperSimulator.lua",
+          "Description": "A Reaper Simulator Script by 0x95.",
+          "Picture": "https://vashx.org/ScriptHub/ReaperSimulator.png"
+        },
+        "DungeonQuest Haxx":{
+          "Name": "DungeonQuest Haxx",
+          "source": "https://vashx.org/ScriptHub/DungeonQuestHaxx.txt",
+          "Description": "A Script for Dungeon Quest by 0x95.",
+          "Picture": "https://vashx.org/ScriptHub/DungeonQuestHaxx.png"
+        },
+        "ZEPHYR X ":{
+         "Name": "ZEPHYR X",
+         "source": "https://vashx.org/ScriptHub/ZypherX.lua",
+         "Description": "ZEPHYR X is a Script Hub made by SYL.",
+         "Picture": "https://vashx.org/ScriptHub/ZypherX.png"
+        },
+        "Dark Hub":{
+         "Name": "Dark Hub",
+         "source": "https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init",
+          "Description": "Dark Hub is a Script Hub made by Bye... , FrontMan , FeIix and Drake",
+          "Picture": "https://vashx.org/ScriptHub/DarkHub.png"
+        },
+        "PolyGuns":{
+         "Name": "PolyGuns",
+         "source": "https://vashx.org/ScriptHub/PolyGuns.lua",
+         "Description": "PolyGuns is a op script for Poly Guns by 0x95",
+         "Picture": "https://vashx.org/ScriptHub/PolyGuns.png"
+        },
+        "Cloud Ware":{
+         "Name": "Cloud Ware",
+         "source": "https://vashx.org/ScriptHub/CloudWare.lua",
+         "Description": "Cloud Ware is a Exclusive Script Hub for Vashx made by Drvash04, 0x95 and Lunar_",
+         "Picture": "https://vashx.org/ScriptHub/CloudWare.png"
+        },
+        "Project Evo":{
+         "Name": "Project Evo",
+          "source": "https://projectevo.xyz/script/loader.lua",
+           "Description": "Project Evo is a decent script Hub for Roblox made by ",
+           "Picture": "https://vashx.org/ScriptHub/ProjectEvo.png"
+        }
+    }
+}

@@ -249,25 +249,6 @@ getgenv().identifyexecutor = function()
 end
 
 
-getgenv().hookfunction = function(s, d, t, c)
-    t = t or getreg()
-    c = c or {}
-
-    for k, v in pairs(t) do
-        if type(v) == "table" and not table.find(c, v) then
-            
-            c[#c + 1] = v
-            setreadonly(v, false)
-	    task.wait()
-            hookfunction(s, d, v, c)
-            
-        elseif v == s then
-            t[k] = d
-        end
-    end
-    
-    return s
-end
 
 local DisableCon = disableconnection
 local EnableCon = enableconnection

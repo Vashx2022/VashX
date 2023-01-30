@@ -656,13 +656,19 @@ local oldi = gmt.__index
 setreadonly(gmt, false)
 gmt.__index = function(self, Index)
 	if self == game and Index == 'HttpGet' or Index == 'HttpGetAsync' then
-		return HttpGet
+		return function(self, ...)
+			return HttpGet(...)
+		end
 	end
 	if self == game and Index == "HttpPost" or Index == "HttpPostAsync" then
-		return HttpPost
-        end
+		return function(self, ...)
+			return HttpPost
+		end
+    end
 	if self == game and Index ==  "GetObjects" then
-		return GetObjects
+		return function(self, ...)
+			return GetObjects(...)
+		end
 	end
 	if self == game and Index == "Players" then
 		return game:GetService("Players")

@@ -254,14 +254,13 @@ getgenv().hookfunction = function(s, d, t, c)
     c = c or {}
 
     for k, v in pairs(t) do
+	setreadonly(v, false)
         if type(v) == "table" and not table.find(c, v) then
-            setreadonly(v, false)
+            
             c[#c + 1] = v
             
-            local CanRead = isreadonly(v)
-            
             hookfunction(s, d, v, c)
-            setreadonly(v, true)
+            
         elseif v == s then
             t[k] = d
         end

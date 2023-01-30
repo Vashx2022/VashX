@@ -2,78 +2,78 @@
     "scriptHub": {
          "Dark Dex": { 
             "Name": "Dark Dex", 
-            "source": "https://vashx.org/ScriptHub/Dex.lua", 
+            "source": "https://vashxhost.cf/ScriptHub/Dex.lua", 
             "Description": "A modified version of the popular 'Dex' explorer specifically for VashX", 
-            "Picture": "https://vashx.org/ScriptHub/Dex.png"
+            "Picture": "https://vashxhost.cf/ScriptHub/Dex.png"
         },
         "Infinite Yield":{
             "Name": "Infinite Yield", 
-            "source": "https://vashx.org/ScriptHub/InfiniteYield.txt", 
+            "source": "https://vashxhost.cf/ScriptHub/InfiniteYield.txt", 
             "Description": "Infinite Yield Admin Script for Roblox", 
-            "Picture": "https://vashx.org/ScriptHub/InfiniteYield.png"
+            "Picture": "https://vashxhost.cf/ScriptHub/InfiniteYield.png"
         },
         "Unamed ESP":{
             "Name": "Unamed ESP", 
-            "source": "https://vashx.org/ScriptHub/UnamedESP.txt", 
+            "source": "https://vashxhost.cf/ScriptHub/UnamedESP.txt", 
             "Description": "An undetected Esp Script Made By IceWolf using the Drawing Library.", 
-            "Picture": "https://vashx.org/ScriptHub/UnamedESP.png"
+            "Picture": "https://vashxhost.cf/ScriptHub/UnamedESP.png"
         },
         
         "Fathom Hub":{
             "Name": "Fathom Hub", 
-            "source": "https://vashx.org/ScriptHub/FathomHub.lua", 
+            "source": "https://vashxhost.cf/ScriptHub/FathomHub.lua", 
             "Description": "Fathom Hub is a  Script Hub with lots of Features made by Syntax and Expensive.", 
-            "Picture": "https://vashx.org/ScriptHub/FathomHub.png"
+            "Picture": "https://vashxhost.cf/ScriptHub/FathomHub.png"
         },
 
         "TurtleSpy":{
             "Name": "TurtleSpy", 
-            "source": "https://vashx.org/ScriptHub/TurtleSpy.lua", 
+            "source": "https://vashxhost.cf/ScriptHub/TurtleSpy.lua", 
             "Description": "Turtle Spy is RemoteSpy that allows you to generate scripts with remote, decompile Scripts or view remotes.", 
-            "Picture": "https://vashx.org/ScriptHub/TurtleSpy.png"
+            "Picture": "https://vashxhost.cf/ScriptHub/TurtleSpy.png"
         },
 
         "Murder Mystery2":{
           "Name": "Murder Mystery2",  
-          "source": "https://vashx.org/ScriptHub/MM2.txt", 
+          "source": "https://vashxhost.cf/ScriptHub/MM2.txt", 
           "Description": "The Best Murder Mystery2 Script for Farming XP, Kills and wins.", 
-          "Picture": "https://vashx.org/ScriptHub/MM2.png"
+          "Picture": "https://vashxhost.cf/ScriptHub/MM2.png"
         },
         "Reaper Simulator":{
           "Name": "Reaper Simulator",
-          "source": "https://vashx.org/ScriptHub/ReaperSimulator.lua",
+          "source": "https://vashxhost.cf/ScriptHub/ReaperSimulator.lua",
           "Description": "A Reaper Simulator Script by 0x95.",
-          "Picture": "https://vashx.org/ScriptHub/ReaperSimulator.png"
+          "Picture": "https://vashxhost.cf/ScriptHub/ReaperSimulator.png"
         },
         "Remote 2 Script":{
          "Name": "Remote 2 Script",
-         "source": "https://vashx.org/ScriptHub/RS2.lua",
+         "source": "https://vashxhost.cf/ScriptHub/RS2.lua",
          "Description": "Remote 2 Script is a Op RemoteSpy with alot of Features.",
-         "Picture": "https://vashx.org/ScriptHub/RS2.png"
+         "Picture": "https://vashxhost.cf/ScriptHub/RS2.png"
         },
         "Dark Hub":{
          "Name": "Dark Hub",
          "source": "https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init",
           "Description": "Dark Hub is a Script Hub made by Bye... , FrontMan , FeIix and Drake",
-          "Picture": "https://vashx.org/ScriptHub/DarkHub.png"
+          "Picture": "https://vashxhost.cf/ScriptHub/DarkHub.png"
         },
         "PolyGuns":{
          "Name": "PolyGuns",
-         "source": "https://vashx.org/ScriptHub/PolyGuns.lua",
+         "source": "https://vashxhost.cf/ScriptHub/PolyGuns.lua",
          "Description": "PolyGuns is a op script for Poly Guns by 0x95",
-         "Picture": "https://vashx.org/ScriptHub/PolyGuns.png"
+         "Picture": "https://vashxhost.cf/ScriptHub/PolyGuns.png"
         },
         "Cloud Ware":{
          "Name": "Cloud Ware",
-         "source": "https://vashx.org/ScriptHub/CloudWare.lua",
+         "source": "https://vashxhost.cf/ScriptHub/CloudWare.lua",
          "Description": "Cloud Ware is a Exclusive Script Hub for Vashx made by Drvash04, 0x95 and Lunar_",
-         "Picture": "https://vashx.org/ScriptHub/CloudWare.png"
+         "Picture": "https://vashxhost.cf/ScriptHub/CloudWare.png"
         },
         "Project Evo":{
          "Name": "Project Evo",
           "source": "https://projectevo.xyz/script/loader.lua",
            "Description": "Project Evo is a decent script Hub for Roblox made by ",
-           "Picture": "https://vashx.org/ScriptHub/ProjectEvo.png"
+           "Picture": "https://vashxhost.cf/ScriptHub/ProjectEvo.png"
         }
     }
 }

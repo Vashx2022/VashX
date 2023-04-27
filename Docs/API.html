@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>VashX API - Docs</title>
+
+        <style>
+            body {
+                background-color: rgb(25,25,32);
+            }
+            .table {
+                display: inline-block;
+                color: rgb(255, 255, 255);
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+            .void {
+                font-family:Arial, Helvetica, sans-serif;
+                color: rgb(255, 255, 255);
+                font-weight: lighter;
+                display: inline-block;
+            }
+            .func {
+                display: inline-block;
+                color: rgb(0, 140, 255);
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+            .descriptor {
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+                color: rgb(255,255,255);
+            }
+            .variant {
+                display: inline-block;
+                color: rgb(255, 255, 255);
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2 class="table">table</h2>
+            <h2 class="func">getrawmetatable(<span class="variant">Variant (table/userdata)</span>)</h2>
+                <h3 class="descriptor">Returns the metatable of the given argument.</h3>
+                <br>
+
+        <h2 class="void">void</h2>
+            <h2 class="func">setreadonly(<span class="table">table</span>)</h2>
+                <h3 class="descriptor">Allows the table to be written to</h3>
+                    <br>
+
+                    <h2 class="void">bool</h2>
+                    <h2 class="func">isreadonly(<span class="table">table</span>)</h2>
+                        <h3 class="descriptor">Returns if the table is readonly</h3>
+                            <br>    
+
+                            <h2 class="table">table</h2>
+            <h2 class="func">getgenv()</h2>
+                <h3 class="descriptor">Returns VashX's global enviornment</h3>
+                    <br>
+
+                    <h2 class="table">table</h2>
+            <h2 class="func">getrenv()</h2>
+                <h3 class="descriptor">Returns Roblox's global enviornment</h3>
+                    <br>
+
+                    <h2 class="table">table</h2>
+            <h2 class="func">getreg()</h2>
+                <h3 class="descriptor">Returns Robloxs's registry table</h3>
+                    <br>
+
+            <h2  class="func">getsenv()</h2>
+            <h3 class="descriptor"> returns a local or module script's envirement
+
+            </h3>
+            
+            </h2>
+                    <h2 class="table">table</h2>
+            <h2 class="func">getgc()</h2>
+                <h3 class="descriptor">Returns a table of all garbage collectable objects</h3>
+                    <br>
+
+                    <h2 class="table">function</h2>
+            <h2 class="func">loadstring(<span class="void">string</span>)</h2>
+                <h3 class="descriptor">Loads a string.</h3>
+                    <br>
+
+                    <h2 class="table">void</h2>
+            <h2 class="func">writefile(<span class="void">string (filename)</span>, <span class="void">string (contents)</span>)</h2>
+                <h3 class="descriptor">Writes the contents to a file. Automatically creates the file if it does not exist.</h3>
+                    <br>
+
+                    <h2 class="table">string</h2>
+            <h2 class="func">readfile(<span class="void">string (filename)</span>)</h2>
+                <h3 class="descriptor">Reads the file's contents and returns them in a string.</h3>
+                    <br>
+
+                    <h2 class="table">void</h2>
+                    <h2 class="func">setclipboard(<span class="void">string</span>)</h2>
+                        <h3 class="descriptor">Set's the user's clipboard</h3>
+                            <br>
+    </body>
+</html>

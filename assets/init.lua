@@ -199,20 +199,10 @@ end)
 
 
 local gmt = getrawmetatable(game)
-local old = gmt.__namecall
+local oldnc = gmt.__namecall
+local oldidx = gmt.__index
 setreadonly(gmt, false)
-gmt.__namecall = function(self, ...)
-	if self == game and getnamecallmethod() =='HttpGet' or getnamecallmethod() == 'HttpGetAsync' then
-		return HttpGet(...)
-	end
-	if self == game and getnamecallmethod() == 'GetObjects' then
-		return GetObjects(...)
-	end
-	if self == game and getnamecallmethod() == "HttpPost" or getnamecallmethod() == "HttpPostAsync" then
-		return HttpPost(...)
-	end
-	return old(self, ...)
-end
+
 
 getgenv().secure_call = newcclosure(function(Closure, Spoof, ...)
 	assert(typeof(Spoof) == "Instance", "invalid argument #1 to '?' (LocalScript or ModuleScript expected, got "..type(Spoof)..")")
@@ -653,8 +643,19 @@ getgenv().syn = {
 setreadonly(getgenv().syn, true)
 
 
-local gmt = getrawmetatable(game)
-local oldi = gmt.__index
+gmt.__namecall = function(self, ...)
+	if self == game and getnamecallmethod() =='HttpGet' or getnamecallmethod() == 'HttpGetAsync' then
+		return HttpGet(...)
+	end
+	if self == game and getnamecallmethod() == 'GetObjects' then
+		return GetObjects(...)
+	end
+	if self == game and getnamecallmethod() == "HttpPost" or getnamecallmethod() == "HttpPostAsync" then
+		return HttpPost(...)
+	end
+	return oldnc(self, ...)
+end
+
 setreadonly(gmt, false)
 gmt.__index = function(self, Index)
 	if self == game and Index == 'HttpGet' or Index == 'HttpGetAsync' then
@@ -679,6 +680,6 @@ gmt.__index = function(self, Index)
 		return game:GetService("RunService")
 	end
 
-	return oldi(self, Index)
+	return oldidx(self, Index)
 end
 setreadonly(gmt, true)

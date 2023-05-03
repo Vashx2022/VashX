@@ -250,47 +250,50 @@ end
 
 
 
-local DisableCon = disableconnection
-local EnableCon = enableconnection
-local GetConFunc = getconnectionfunc
-local MT = {
-	__index = function(a, b)
-		if b == "Fire" then
-			return function(self, ...) fireonesignal(self.__OBJECT, ...) end
-		end
+if is_enable_connections then
+	
+	local DisableCon = disableconnection
+	local EnableCon = enableconnection
+	local GetConFunc = getconnectionfunc
+	local MT = {
+		__index = function(a, b)
+			if b == "Fire" then
+				return function(self, ...) fireonesignal(self.__OBJECT, ...) end
+			end
 
-		if b == "Disable" then
-			return function(self, ...) DisableCon(self.__OBJECT) end
-		end
+			if b == "Disable" then
+				return function(self, ...) DisableCon(self.__OBJECT) end
+			end
 
-		if b == "Enable" then
-			return function(self, ...) EnableCon(self.__OBJECT) end
-		end
+			if b == "Enable" then
+				return function(self, ...) EnableCon(self.__OBJECT) end
+			end
 
-		if b == "Function" then
-			return function(self, ...) return GetConFunc(self.__OBJECT) end
-		end
+			if b == "Function" then
+				return function(self, ...) return GetConFunc(self.__OBJECT) end
+			end
 
-		return nil
+			return nil
+		end
+	}
+	function attachMT(tbl)
+		setmetatable(tbl, MT)
+		return tbl
 	end
-}
-function attachMT(tbl)
-	setmetatable(tbl, MT)
-	return tbl
-end
-getgenv().firesignal = function(a, ...)
-	temp=a:Connect(function()end)
-	temp:Disconnect()
-	return firesignalhelper(temp, ...)
-end
-getgenv().getconnections = function(a)
-	temp = a:Connect(function() end)
-	signals = getothersignals(temp)
-	for i,v in pairs(signals) do
-		signals[i] = attachMT(v)
+	getgenv().firesignal = function(a, ...)
+		temp=a:Connect(function()end)
+		temp:Disconnect()
+		return firesignalhelper(temp, ...)
 	end
-	temp:Disconnect()
-	return signals
+	getgenv().getconnections = function(a)
+		temp = a:Connect(function() end)
+		signals = getothersignals(temp)
+		for i,v in pairs(signals) do
+			signals[i] = attachMT(v)
+		end
+		temp:Disconnect()
+		return signals
+	end
 end
 
 getgenv().appendfile = newcclosure(function(a1, a2)
@@ -663,7 +666,7 @@ gmt.__index = function(self, Index)
 		return function(self, ...)
 			return HttpPost
 		end
-    end
+	end
 	if self == game and Index ==  "GetObjects" then
 		return function(self, ...)
 			return GetObjects(...)

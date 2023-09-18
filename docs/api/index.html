@@ -1,241 +1,248 @@
 <html>
-  <head>
-    <title>VashX API - Docs</title>
+
+<head>
+  <title>VashX API - Docs</title>
 
 
 
-    <style>
-body {
-  background-color: rgb(25,25,32);
-}
-            .table {
-              display: inline-block;
-              color: rgb(255, 255, 255);
-              font-family:Arial, Helvetica, sans-serif;
-              font-weight: lighter;
-            }
-            .void {
-              font-family:Arial, Helvetica, sans-serif;
-              color: rgb(255, 255, 255);
-              font-weight: lighter;
-              display: inline-block;
-            }
-            .func {
-              display: inline-block;
-              color: rgb(0, 140, 255);
-              font-family:Arial, Helvetica, sans-serif;
-              font-weight: lighter;
-            }
-            .descriptor {
-              font-family:Arial, Helvetica, sans-serif;
-              font-weight: lighter;
-              color: rgb(255,255,255);
-            }
-            .variant {
-              display: inline-block;
-              color: rgb(255, 255, 255);
-              font-family:Arial, Helvetica, sans-serif;
-              font-weight: lighter;
-            }
+  <style>
+    body {
+      background-color: rgb(25, 25, 32);
+    }
 
-            
-body { 
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    .table {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+    }
 
-.header {
-  overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
-}
+    .void {
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(255, 255, 255);
+      font-weight: lighter;
+      display: inline-block;
+    }
 
-.header a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
-}
+    .func {
+      display: inline-block;
+      color: rgb(0, 140, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+    }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
+    .descriptor {
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+      color: rgb(255, 255, 255);
+    }
 
-.header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.header a.active {
-  background-color: dodgerblue;
-  color: white;
-}
-
-.header-right {
-  float: right;
-}
-
-@media screen and (max-width: 500px) {
-  .header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .header-right {
-    float: none;
-  }
-}
-
-.img {
-  max-width: 10%;
-  height: auto;
-}
+    .variant {
+      display: inline-block;
+      color: rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+    }
 
 
-    </style>
-  </head>
-  <body>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+    }
+
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    .header a.logo {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    .header-right {
+      float: right;
+    }
+
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+
+    .img {
+      max-width: 10%;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
 
 
-    <div class="header">
-      <a href="/" class="logo"> <img class="img" src="imgs/Vashx.png" alt="Vashx"></a>
-      <div class="header-right">
-        <a class="active" href="#home">Home</a>
-        <a href="login/">Login</a>
-        <a href="/docs/api">Docs</a>
-        <a href="https://www.youtube.com/@VashX_RBLX_Executor">YouTube</a>
-      </div>
+  <div class="header">
+    <a href="/" class="logo"> <img class="img" src="../../imgs/Vashx.png" alt="Vashx"></a>
+    <div class="header-right">
+      <a href="/">Home</a>
+      <a href="/login/">Login</a>
+      <a class="active" href="/docs/api">Docs</a>
+      <a href="https://www.youtube.com/@VashX_RBLX_Executor">YouTube</a>
     </div>
+  </div>
 
 
 
-    <h2 class="table">table</h2>
-    <h2 class="func">getrawmetatable(<span class="variant">Variant (table/userdata)</span>)</h2>
-    <h3 class="descriptor">Returns the metatable of the given argument.</h3>
-    <br>
+  <h2 class="table">table</h2>
+  <h2 class="func">getrawmetatable(<span class="variant">Variant (table/userdata)</span>)</h2>
+  <h3 class="descriptor">Returns the metatable of the given argument.</h3>
+  <br>
 
-    <h2 class="void">void</h2>
-    <h2 class="func">setreadonly(<span class="table">table</span>)</h2>
-    <h3 class="descriptor">Allows the table to be written to</h3>
-    <br>
+  <h2 class="void">void</h2>
+  <h2 class="func">setreadonly(<span class="table">table</span>)</h2>
+  <h3 class="descriptor">Allows the table to be written to</h3>
+  <br>
 
-    <h2 class="void">bool</h2>
-    <h2 class="func">isreadonly(<span class="table">table</span>)</h2>
-    <h3 class="descriptor">Returns if the table is readonly</h3>
-    <br>    
+  <h2 class="void">bool</h2>
+  <h2 class="func">isreadonly(<span class="table">table</span>)</h2>
+  <h3 class="descriptor">Returns if the table is readonly</h3>
+  <br>
 
-    <h2 class="table">table</h2>
-    <h2 class="func">getgenv()</h2>
-    <h3 class="descriptor">Returns VashX's global enviornment</h3>
-    <br>
+  <h2 class="table">table</h2>
+  <h2 class="func">getgenv()</h2>
+  <h3 class="descriptor">Returns VashX's global enviornment</h3>
+  <br>
 
-    <h2 class="table">table</h2>
-    <h2 class="func">getrenv()</h2>
-    <h3 class="descriptor">Returns Roblox's global enviornment</h3>
-    <br>
+  <h2 class="table">table</h2>
+  <h2 class="func">getrenv()</h2>
+  <h3 class="descriptor">Returns Roblox's global enviornment</h3>
+  <br>
 
-    <h2 class="table">table</h2>
-    <h2 class="func">getreg()</h2>
-    <h3 class="descriptor">Returns Robloxs's registry table</h3>
-    <br>
+  <h2 class="table">table</h2>
+  <h2 class="func">getreg()</h2>
+  <h3 class="descriptor">Returns Robloxs's registry table</h3>
+  <br>
 
-    <h2  class="func">getsenv()</h2>
-    <h3 class="descriptor"> returns a local or module script's envirement
+  <h2 class="func">getsenv()</h2>
+  <h3 class="descriptor"> returns a local or module script's envirement
+
+  </h3>
+
+  <h2 class="func">getenv</h2>
+  <h3 class="descriptor"> return's the thread's env
+
+  </h3>
+  </h2>
+
+  </h2>
+  <h2 class="table">table</h2>
+  <h2 class="func">getgc()</h2>
+  <h3 class="descriptor">Returns a table of all garbage collectable objects</h3>
+  <br>
+
+  <h2 class="table">function</h2>
+  <h2 class="func">loadstring(<span class="void">string</span>)</h2>
+  <h3 class="descriptor">Loads a string.</h3>
+  <br>
+
+  <h2 class="func"> DataModel:HttpGet
+    <h3 class="descriptor"> makes a get request with curl and pushes the contents as a string
+
+    </h3>
+  </h2>
+
+  <h2 class="func"> Game:HttpGetAsync
+    <h3 class="descriptor"> make's a httpget request asynchronically with curl and yields
+
+    </h3>
+  </h2>
+
+  <h2 class="func"> DataModel:GetObjects
+    <h3 class="descriptor"> Load's a object/client asset.
+
+    </h3>
+  </h2>
+
+  <h2 class="table">void</h2>
+  <h2 class="func">writefile(<span class="void">string (filename)</span>, <span class="void">string (contents)</span>)
+  </h2>
+  <h3 class="descriptor">Writes the contents to a file. Automatically creates the file if it does not exist.</h3>
+  <br>
+
+  <h2 class="func">fireclickdetector
+    <h3 class="descriptor"> fire's a clickdetector if you give it the path to a clickdetector.
+
+    </h3>
+  </h2>
+
+  <h2 class="func"> getnamecallmethod
+    <h3 class="descriptor"> get's a namecallmethod.
+
+    </h3>
+  </h2>
+
+  <h2 class="func"> setnamecallmethod
+    <h3 class="descriptor"> set's a namecallmethod
+
+    </h3>
+  </h2>
+
+  <h2 class="func"> islclosure
+
+    <h3 class="descriptor"> check's if its a lclosure
 
     </h3>
 
-    <h2 class="func">getenv</h2>
-    <h3 class="descriptor"> return's the thread's env
 
-    </h3>
-    </h2>
-
-    </h2>
-    <h2 class="table">table</h2>
-    <h2 class="func">getgc()</h2>
-    <h3 class="descriptor">Returns a table of all garbage collectable objects</h3>
-    <br>
-
-    <h2 class="table">function</h2>
-    <h2 class="func">loadstring(<span class="void">string</span>)</h2>
-    <h3 class="descriptor">Loads a string.</h3>
-    <br>
-
-    <h2 class="func"> DataModel:HttpGet
-      <h3 class="descriptor"> makes a get request  with curl and pushes the contents as a string
+    <h2 class="func"> iscclosure
+      <h3 class="descriptor"> check's if its a cclosure
 
       </h3>
     </h2>
 
-    <h2 class="func"> Game:HttpGetAsync
-      <h3 class="descriptor"> make's a httpget request asynchronically with curl and yields
+    <h2 class="func"> getfpscap
+      <h3 class="descriptor">return's you're fps
 
       </h3>
     </h2>
 
-    <h2 class="func"> DataModel:GetObjects
-      <h3 class="descriptor"> Load's a object/client asset.
+  </h2>
+  <h2 class="table">string</h2>
+  <h2 class="func">readfile(<span class="void">string (filename)</span>)</h2>
+  <h3 class="descriptor">Reads the file's contents and returns them in a string.</h3>
+  <br>
 
-      </h3>
-    </h2>
+  <h2 class="table">void</h2>
+  <h2 class="func">setclipboard(<span class="void">string</span>)</h2>
+  <h3 class="descriptor">Set's the user's clipboard</h3>
+  <br>
+</body>
 
-    <h2 class="table">void</h2>
-    <h2 class="func">writefile(<span class="void">string (filename)</span>, <span class="void">string (contents)</span>)</h2>
-    <h3 class="descriptor">Writes the contents to a file. Automatically creates the file if it does not exist.</h3>
-    <br>
-
-    <h2 class="func">fireclickdetector
-      <h3 class="descriptor"> fire's a clickdetector if you give it the path to a clickdetector.
-
-      </h3>
-    </h2>
-
-    <h2 class="func" > getnamecallmethod
-      <h3 class="descriptor" > get's a namecallmethod.
-
-      </h3>
-    </h2>
-
-      <h2 class="func" > setnamecallmethod
-        <h3 class="descriptor"> set's a namecallmethod
-
-        </h3>
-      </h2>
-
-      <h2 class="func" > islclosure 
-
-        <h3 class="descriptor" > check's if its a lclosure
-
-        </h3>
-
-
-          <h2 class="func" > iscclosure
-            <h3 class="descriptor"> check's if its a cclosure
-
-            </h3>
-          </h2>
-
-        <h2 class="func" > getfpscap
-          <h3 class="descriptor">return's you're fps
-
-          </h3>
-        </h2>
-
-      </h2>
-      <h2 class="table">string</h2>
-      <h2 class="func">readfile(<span class="void">string (filename)</span>)</h2>
-      <h3 class="descriptor">Reads the file's contents and returns them in a string.</h3>
-      <br>
-
-      <h2 class="table">void</h2>
-      <h2 class="func">setclipboard(<span class="void">string</span>)</h2>
-      <h3 class="descriptor">Set's the user's clipboard</h3>
-      <br>
-  </body>
 </html>
